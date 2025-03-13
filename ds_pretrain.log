@@ -1,0 +1,527 @@
+[2025-02-15 23:53:02,528] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[2025-02-15 23:53:03,795] [WARNING] [runner.py:202:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+[2025-02-15 23:53:03,795] [INFO] [runner.py:568:main] cmd = /home/gcq/anaconda3/envs/phi/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMSwgMiwgNCwgNSwgNiwgN119 --master_addr=127.0.0.1 --master_port=29500 --enable_each_rank_log=None train_deepspeed.py --deepspeed deepspeed_configs/ds_config.json
+[2025-02-15 23:53:06,401] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[2025-02-15 23:53:07,596] [INFO] [launch.py:146:main] WORLD INFO DICT: {'localhost': [1, 2, 4, 5, 6, 7]}
+[2025-02-15 23:53:07,596] [INFO] [launch.py:152:main] nnodes=1, num_local_procs=6, node_rank=0
+[2025-02-15 23:53:07,596] [INFO] [launch.py:163:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1, 2, 3, 4, 5]})
+[2025-02-15 23:53:07,597] [INFO] [launch.py:164:main] dist_world_size=6
+[2025-02-15 23:53:07,597] [INFO] [launch.py:168:main] Setting CUDA_VISIBLE_DEVICES=1,2,4,5,6,7
+[2025-02-15 23:53:07,609] [INFO] [launch.py:256:main] process 3752006 spawned with command: ['/home/gcq/anaconda3/envs/phi/bin/python', '-u', 'train_deepspeed.py', '--local_rank=0', '--deepspeed', 'deepspeed_configs/ds_config.json']
+[2025-02-15 23:53:07,619] [INFO] [launch.py:256:main] process 3752007 spawned with command: ['/home/gcq/anaconda3/envs/phi/bin/python', '-u', 'train_deepspeed.py', '--local_rank=1', '--deepspeed', 'deepspeed_configs/ds_config.json']
+[2025-02-15 23:53:07,633] [INFO] [launch.py:256:main] process 3752008 spawned with command: ['/home/gcq/anaconda3/envs/phi/bin/python', '-u', 'train_deepspeed.py', '--local_rank=2', '--deepspeed', 'deepspeed_configs/ds_config.json']
+[2025-02-15 23:53:07,652] [INFO] [launch.py:256:main] process 3752009 spawned with command: ['/home/gcq/anaconda3/envs/phi/bin/python', '-u', 'train_deepspeed.py', '--local_rank=3', '--deepspeed', 'deepspeed_configs/ds_config.json']
+[2025-02-15 23:53:07,670] [INFO] [launch.py:256:main] process 3752010 spawned with command: ['/home/gcq/anaconda3/envs/phi/bin/python', '-u', 'train_deepspeed.py', '--local_rank=4', '--deepspeed', 'deepspeed_configs/ds_config.json']
+[2025-02-15 23:53:07,685] [INFO] [launch.py:256:main] process 3752011 spawned with command: ['/home/gcq/anaconda3/envs/phi/bin/python', '-u', 'train_deepspeed.py', '--local_rank=5', '--deepspeed', 'deepspeed_configs/ds_config.json']
+MiniPhi3(
+  (model): Phi3Model(
+    (embed_tokens): Embedding(32000, 768, padding_idx=0)
+    (embed_dropout): Dropout(p=0.0, inplace=False)
+    (layers): ModuleList(
+      (0-11): 12 x Phi3DecoderLayer(
+        (self_attn): Phi3FlashAttention2(
+          (o_proj): Linear(in_features=768, out_features=768, bias=False)
+          (qkv_proj): Linear(in_features=768, out_features=2304, bias=False)
+          (rotary_emb): Phi3RotaryEmbedding()
+        )
+        (mlp): Phi3MLP(
+          (gate_up_proj): Linear(in_features=768, out_features=4096, bias=False)
+          (down_proj): Linear(in_features=2048, out_features=768, bias=False)
+          (activation_fn): SiLU()
+        )
+        (input_layernorm): Phi3RMSNorm()
+        (resid_attn_dropout): Dropout(p=0.0, inplace=False)
+        (resid_mlp_dropout): Dropout(p=0.0, inplace=False)
+        (post_attention_layernorm): Phi3RMSNorm()
+      )
+    )
+    (norm): Phi3RMSNorm()
+  )
+  (lm_head): Linear(in_features=768, out_features=32000, bias=False)
+)
+MiniPhi3(
+  (model): Phi3Model(
+    (embed_tokens): Embedding(32000, 768, padding_idx=0)
+    (embed_dropout): Dropout(p=0.0, inplace=False)
+    (layers): ModuleList(
+      (0-11): 12 x Phi3DecoderLayer(
+        (self_attn): Phi3FlashAttention2(
+          (o_proj): Linear(in_features=768, out_features=768, bias=False)
+          (qkv_proj): Linear(in_features=768, out_features=2304, bias=False)
+          (rotary_emb): Phi3RotaryEmbedding()
+        )
+        (mlp): Phi3MLP(
+          (gate_up_proj): Linear(in_features=768, out_features=4096, bias=False)
+          (down_proj): Linear(in_features=2048, out_features=768, bias=False)
+          (activation_fn): SiLU()
+        )
+        (input_layernorm): Phi3RMSNorm()
+        (resid_attn_dropout): Dropout(p=0.0, inplace=False)
+        (resid_mlp_dropout): Dropout(p=0.0, inplace=False)
+        (post_attention_layernorm): Phi3RMSNorm()
+      )
+    )
+    (norm): Phi3RMSNorm()
+  )
+  (lm_head): Linear(in_features=768, out_features=32000, bias=False)
+)
+MiniPhi3(
+  (model): Phi3Model(
+    (embed_tokens): Embedding(32000, 768, padding_idx=0)
+    (embed_dropout): Dropout(p=0.0, inplace=False)
+    (layers): ModuleList(
+      (0-11): 12 x Phi3DecoderLayer(
+        (self_attn): Phi3FlashAttention2(
+          (o_proj): Linear(in_features=768, out_features=768, bias=False)
+          (qkv_proj): Linear(in_features=768, out_features=2304, bias=False)
+          (rotary_emb): Phi3RotaryEmbedding()
+        )
+        (mlp): Phi3MLP(
+          (gate_up_proj): Linear(in_features=768, out_features=4096, bias=False)
+          (down_proj): Linear(in_features=2048, out_features=768, bias=False)
+          (activation_fn): SiLU()
+        )
+        (input_layernorm): Phi3RMSNorm()
+        (resid_attn_dropout): Dropout(p=0.0, inplace=False)
+        (resid_mlp_dropout): Dropout(p=0.0, inplace=False)
+        (post_attention_layernorm): Phi3RMSNorm()
+      )
+    )
+    (norm): Phi3RMSNorm()
+  )
+  (lm_head): Linear(in_features=768, out_features=32000, bias=False)
+)
+MiniPhi3(
+  (model): Phi3Model(
+    (embed_tokens): Embedding(32000, 768, padding_idx=0)
+    (embed_dropout): Dropout(p=0.0, inplace=False)
+    (layers): ModuleList(
+      (0-11): 12 x Phi3DecoderLayer(
+        (self_attn): Phi3FlashAttention2(
+          (o_proj): Linear(in_features=768, out_features=768, bias=False)
+          (qkv_proj): Linear(in_features=768, out_features=2304, bias=False)
+          (rotary_emb): Phi3RotaryEmbedding()
+        )
+        (mlp): Phi3MLP(
+          (gate_up_proj): Linear(in_features=768, out_features=4096, bias=False)
+          (down_proj): Linear(in_features=2048, out_features=768, bias=False)
+          (activation_fn): SiLU()
+        )
+        (input_layernorm): Phi3RMSNorm()
+        (resid_attn_dropout): Dropout(p=0.0, inplace=False)
+        (resid_mlp_dropout): Dropout(p=0.0, inplace=False)
+        (post_attention_layernorm): Phi3RMSNorm()
+      )
+    )
+    (norm): Phi3RMSNorm()
+  )
+  (lm_head): Linear(in_features=768, out_features=32000, bias=False)
+)
+MiniPhi3(
+  (model): Phi3Model(
+    (embed_tokens): Embedding(32000, 768, padding_idx=0)
+    (embed_dropout): Dropout(p=0.0, inplace=False)
+    (layers): ModuleList(
+      (0-11): 12 x Phi3DecoderLayer(
+        (self_attn): Phi3FlashAttention2(
+          (o_proj): Linear(in_features=768, out_features=768, bias=False)
+          (qkv_proj): Linear(in_features=768, out_features=2304, bias=False)
+          (rotary_emb): Phi3RotaryEmbedding()
+        )
+        (mlp): Phi3MLP(
+          (gate_up_proj): Linear(in_features=768, out_features=4096, bias=False)
+          (down_proj): Linear(in_features=2048, out_features=768, bias=False)
+          (activation_fn): SiLU()
+        )
+        (input_layernorm): Phi3RMSNorm()
+        (resid_attn_dropout): Dropout(p=0.0, inplace=False)
+        (resid_mlp_dropout): Dropout(p=0.0, inplace=False)
+        (post_attention_layernorm): Phi3RMSNorm()
+      )
+    )
+    (norm): Phi3RMSNorm()
+  )
+  (lm_head): Linear(in_features=768, out_features=32000, bias=False)
+)
+MiniPhi3(
+  (model): Phi3Model(
+    (embed_tokens): Embedding(32000, 768, padding_idx=0)
+    (embed_dropout): Dropout(p=0.0, inplace=False)
+    (layers): ModuleList(
+      (0-11): 12 x Phi3DecoderLayer(
+        (self_attn): Phi3FlashAttention2(
+          (o_proj): Linear(in_features=768, out_features=768, bias=False)
+          (qkv_proj): Linear(in_features=768, out_features=2304, bias=False)
+          (rotary_emb): Phi3RotaryEmbedding()
+        )
+        (mlp): Phi3MLP(
+          (gate_up_proj): Linear(in_features=768, out_features=4096, bias=False)
+          (down_proj): Linear(in_features=2048, out_features=768, bias=False)
+          (activation_fn): SiLU()
+        )
+        (input_layernorm): Phi3RMSNorm()
+        (resid_attn_dropout): Dropout(p=0.0, inplace=False)
+        (resid_mlp_dropout): Dropout(p=0.0, inplace=False)
+        (post_attention_layernorm): Phi3RMSNorm()
+      )
+    )
+    (norm): Phi3RMSNorm()
+  )
+  (lm_head): Linear(in_features=768, out_features=32000, bias=False)
+)
+[2025-02-16 00:28:55,373] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[2025-02-16 00:28:55,974] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[2025-02-16 00:28:56,342] [INFO] [comm.py:637:init_distributed] cdb=None
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[2025-02-16 00:28:56,538] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[2025-02-16 00:28:57,023] [INFO] [comm.py:637:init_distributed] cdb=None
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[2025-02-16 00:28:57,257] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-02-16 00:28:57,405] [INFO] [comm.py:637:init_distributed] cdb=None
+[2025-02-16 00:28:57,455] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[2025-02-16 00:28:58,068] [INFO] [comm.py:637:init_distributed] cdb=None
+[2025-02-16 00:28:58,068] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2025-02-16 00:28:58,088] [INFO] [comm.py:637:init_distributed] cdb=None
+[2025-02-16 00:28:58,506] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[2025-02-16 00:28:59,124] [INFO] [comm.py:637:init_distributed] cdb=None
+[2025-02-16 00:28:59,816] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.14.2, git-hash=unknown, git-branch=unknown
+[2025-02-16 00:29:00,823] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2025-02-16 00:29:00,825] [INFO] [logging.py:96:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2025-02-16 00:29:00,825] [INFO] [logging.py:96:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2025-02-16 00:29:00,829] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW
+[2025-02-16 00:29:00,829] [INFO] [utils.py:56:is_zero_supported_optimizer] Checking ZeRO support for optimizer=AdamW type=<class 'torch.optim.adamw.AdamW'>
+[2025-02-16 00:29:00,829] [INFO] [logging.py:96:log_dist] [Rank 0] Creating torch.bfloat16 ZeRO stage 2 optimizer
+[2025-02-16 00:29:00,829] [INFO] [stage_1_and_2.py:148:__init__] Reduce bucket size 500000000
+[2025-02-16 00:29:00,829] [INFO] [stage_1_and_2.py:149:__init__] Allgather bucket size 500000000
+[2025-02-16 00:29:00,829] [INFO] [stage_1_and_2.py:150:__init__] CPU Offload: False
+[2025-02-16 00:29:00,829] [INFO] [stage_1_and_2.py:151:__init__] Round robin gradient partitioning: False
+[2025-02-16 00:29:01,513] [INFO] [utils.py:779:see_memory_usage] Before initializing optimizer states
+[2025-02-16 00:29:01,515] [INFO] [utils.py:780:see_memory_usage] MA 0.33 GB         Max_MA 0.38 GB         CA 0.38 GB         Max_CA 0 GB 
+[2025-02-16 00:29:01,515] [INFO] [utils.py:787:see_memory_usage] CPU Virtual Memory:  used = 19.89 GB, percent = 15.8%
+[2025-02-16 00:29:01,711] [INFO] [utils.py:779:see_memory_usage] After initializing optimizer states
+[2025-02-16 00:29:01,712] [INFO] [utils.py:780:see_memory_usage] MA 0.33 GB         Max_MA 0.42 GB         CA 0.46 GB         Max_CA 0 GB 
+[2025-02-16 00:29:01,713] [INFO] [utils.py:787:see_memory_usage] CPU Virtual Memory:  used = 19.47 GB, percent = 15.5%
+[2025-02-16 00:29:01,713] [INFO] [stage_1_and_2.py:543:__init__] optimizer state initialized
+[2025-02-16 00:29:01,867] [INFO] [utils.py:779:see_memory_usage] After initializing ZeRO optimizer
+[2025-02-16 00:29:01,867] [INFO] [utils.py:780:see_memory_usage] MA 0.33 GB         Max_MA 0.33 GB         CA 0.46 GB         Max_CA 0 GB 
+[2025-02-16 00:29:01,868] [INFO] [utils.py:787:see_memory_usage] CPU Virtual Memory:  used = 19.21 GB, percent = 15.3%
+[2025-02-16 00:29:01,868] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Final Optimizer = AdamW
+[2025-02-16 00:29:01,868] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed using client LR scheduler
+[2025-02-16 00:29:01,868] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
+[2025-02-16 00:29:01,869] [INFO] [logging.py:96:log_dist] [Rank 0] step=0, skipped=0, lr=[0.0], mom=[(0.9, 0.999)]
+[2025-02-16 00:29:01,869] [INFO] [config.py:996:print] DeepSpeedEngine configuration:
+[2025-02-16 00:29:01,869] [INFO] [config.py:1000:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2025-02-16 00:29:01,869] [INFO] [config.py:1000:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2025-02-16 00:29:01,869] [INFO] [config.py:1000:print]   amp_enabled .................. False
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   amp_params ................... False
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   bfloat16_enabled ............. True
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   bfloat16_immediate_grad_update  False
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   checkpoint_parallel_write_pipeline  False
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   checkpoint_tag_validation_enabled  True
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   checkpoint_tag_validation_fail  False
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7d1f0a862ac0>
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   communication_data_type ...... None
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   compile_config ............... enabled=False backend='inductor' kwargs={}
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   curriculum_enabled_legacy .... False
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   curriculum_params_legacy ..... False
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   data_efficiency_enabled ...... False
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   dataloader_drop_last ......... False
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   disable_allgather ............ False
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   dump_state ................... False
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   dynamic_loss_scale_args ...... None
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   eigenvalue_enabled ........... False
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   eigenvalue_gas_boundary_resolution  1
+[2025-02-16 00:29:01,870] [INFO] [config.py:1000:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   eigenvalue_layer_num ......... 0
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   eigenvalue_max_iter .......... 100
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   eigenvalue_stability ......... 1e-06
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   eigenvalue_tol ............... 0.01
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   eigenvalue_verbose ........... False
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   elasticity_enabled ........... False
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   fp16_auto_cast ............... None
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   fp16_enabled ................. False
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   fp16_master_weights_and_gradients  False
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   global_rank .................. 0
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   grad_accum_dtype ............. None
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   gradient_accumulation_steps .. 8
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   gradient_clipping ............ 1.0
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   gradient_predivide_factor .... 1.0
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   graph_harvesting ............. False
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   initial_dynamic_scale ........ 1
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   load_universal_checkpoint .... False
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   loss_scale ................... 1.0
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   memory_breakdown ............. False
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   mics_hierarchial_params_gather  False
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   mics_shard_size .............. -1
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   optimizer_legacy_fusion ...... False
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   optimizer_name ............... None
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   optimizer_params ............. None
+[2025-02-16 00:29:01,871] [INFO] [config.py:1000:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   pld_enabled .................. False
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   pld_params ................... False
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   prescale_gradients ........... False
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   scheduler_name ............... None
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   scheduler_params ............. None
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   seq_parallel_communication_data_type  torch.float32
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   sparse_attention ............. None
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   sparse_gradients_enabled ..... False
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   steps_per_print .............. inf
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   train_batch_size ............. 1920
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   train_micro_batch_size_per_gpu  40
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   use_data_before_expert_parallel_  False
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   use_node_local_storage ....... False
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   wall_clock_breakdown ......... False
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   weight_quantization_config ... None
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   world_size ................... 6
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   zero_allow_untested_optimizer  True
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   zero_config .................. stage=2 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500000000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500000000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=None sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50,000,000 param_persistence_threshold=100,000 model_persistence_threshold=sys.maxsize max_live_parameters=1,000,000,000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   zero_enabled ................. True
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   zero_force_ds_cpu_optimizer .. True
+[2025-02-16 00:29:01,872] [INFO] [config.py:1000:print]   zero_optimization_stage ...... 2
+[2025-02-16 00:29:01,872] [INFO] [config.py:986:print_user_config]   json = {
+    "train_batch_size": 1.920000e+03, 
+    "train_micro_batch_size_per_gpu": 40, 
+    "gradient_accumulation_steps": 8, 
+    "gradient_clipping": 1.0, 
+    "zero_allow_untested_optimizer": true, 
+    "fp16": {
+        "enabled": false, 
+        "loss_scale": 0, 
+        "initial_scale_power": 16, 
+        "loss_scale_window": 1000, 
+        "hysteresis": 2, 
+        "min_loss_scale": 1
+    }, 
+    "zero_optimization": {
+        "stage": 2, 
+        "allgather_partitions": true, 
+        "allgather_bucket_size": 5.000000e+08, 
+        "reduce_scatter": true, 
+        "reduce_bucket_size": 5.000000e+08, 
+        "overlap_comm": false, 
+        "contiguous_gradients": true
+    }, 
+    "steps_per_print": inf, 
+    "bf16": {
+        "enabled": true
+    }
+}
+{'loss': 10.5, 'grad_norm': 1.1915092468261719, 'learning_rate': 3.90625e-07, 'epoch': 0.0}
+{'loss': 9.8947, 'grad_norm': 1.8690457344055176, 'learning_rate': 7.8125e-06, 'epoch': 0.01}
+{'loss': 8.7, 'grad_norm': 1.178551197052002, 'learning_rate': 1.5625e-05, 'epoch': 0.02}
+{'loss': 8.55, 'grad_norm': 0.7933829426765442, 'learning_rate': 2.34375e-05, 'epoch': 0.03}
+{'loss': 8.35, 'grad_norm': 0.6718206405639648, 'learning_rate': 3.125e-05, 'epoch': 0.04}
+{'loss': 8.15, 'grad_norm': 0.4662485718727112, 'learning_rate': 3.90625e-05, 'epoch': 0.05}
+{'loss': 8.05, 'grad_norm': 0.28873395919799805, 'learning_rate': 4.6875e-05, 'epoch': 0.06}
+{'loss': 8.05, 'grad_norm': 0.3135295510292053, 'learning_rate': 5.46875e-05, 'epoch': 0.07}
+{'loss': 8.0, 'grad_norm': 0.6245439052581787, 'learning_rate': 6.25e-05, 'epoch': 0.08}
+{'loss': 7.95, 'grad_norm': 0.8771107196807861, 'learning_rate': 7.031250000000001e-05, 'epoch': 0.09}
+{'loss': 7.95, 'grad_norm': 0.7259426712989807, 'learning_rate': 7.8125e-05, 'epoch': 0.1}
+{'loss': 7.9, 'grad_norm': 1.2241744995117188, 'learning_rate': 8.593750000000001e-05, 'epoch': 0.11}
+{'loss': 7.8, 'grad_norm': 1.4897178411483765, 'learning_rate': 9.375e-05, 'epoch': 0.12}
+{'loss': 7.75, 'grad_norm': 0.7779493927955627, 'learning_rate': 9.999865776195387e-05, 'epoch': 0.13}
+{'loss': 7.5, 'grad_norm': 1.1501754522323608, 'learning_rate': 9.995168699663831e-05, 'epoch': 0.14}
+{'loss': 7.25, 'grad_norm': 1.0406973361968994, 'learning_rate': 9.983767637574526e-05, 'epoch': 0.15}
+{'loss': 7.2, 'grad_norm': 0.9828809499740601, 'learning_rate': 9.965677891223626e-05, 'epoch': 0.16}
+{'loss': 7.15, 'grad_norm': 1.328795075416565, 'learning_rate': 9.940923738749778e-05, 'epoch': 0.17}
+{'loss': 7.1, 'grad_norm': 1.3021481037139893, 'learning_rate': 9.909538402550599e-05, 'epoch': 0.18}
+{'loss': 7.0, 'grad_norm': 1.5284795761108398, 'learning_rate': 9.87156400469508e-05, 'epoch': 0.19}
+{'loss': 7.0, 'grad_norm': 1.0414320230484009, 'learning_rate': 9.827051510391825e-05, 'epoch': 0.2}
+{'loss': 6.9, 'grad_norm': 1.094696283340454, 'learning_rate': 9.776060659588948e-05, 'epoch': 0.21}
+{'loss': 6.7, 'grad_norm': 1.1382174491882324, 'learning_rate': 9.718659886797461e-05, 'epoch': 0.22}
+{'loss': 6.3, 'grad_norm': 1.1554553508758545, 'learning_rate': 9.654926229245715e-05, 'epoch': 0.23}
+{'loss': 5.8, 'grad_norm': 1.1811579465866089, 'learning_rate': 9.584945223488227e-05, 'epoch': 0.24}
+{'loss': 5.45, 'grad_norm': 1.3941818475723267, 'learning_rate': 9.508810790607566e-05, 'epoch': 0.25}
+{'loss': 5.2, 'grad_norm': 1.6331090927124023, 'learning_rate': 9.426625110163458e-05, 'epoch': 0.26}
+{'loss': 5.1, 'grad_norm': 1.684848666191101, 'learning_rate': 9.338498483058213e-05, 'epoch': 0.27}
+{'loss': 5.05, 'grad_norm': 0.9944319725036621, 'learning_rate': 9.244549183502547e-05, 'epoch': 0.28}
+{'loss': 5.05, 'grad_norm': 1.4956542253494263, 'learning_rate': 9.144903300280497e-05, 'epoch': 0.29}
+{'loss': 5.025, 'grad_norm': 1.648560643196106, 'learning_rate': 9.039694567526415e-05, 'epoch': 0.3}
+{'loss': 5.0, 'grad_norm': 1.3980844020843506, 'learning_rate': 8.929064185241213e-05, 'epoch': 0.31}
+{'loss': 4.975, 'grad_norm': 1.4228448867797852, 'learning_rate': 8.813160629788687e-05, 'epoch': 0.32}
+{'loss': 4.975, 'grad_norm': 1.2688401937484741, 'learning_rate': 8.692139454626303e-05, 'epoch': 0.33}
+{'loss': 4.95, 'grad_norm': 1.4047824144363403, 'learning_rate': 8.566163081537837e-05, 'epoch': 0.34}
+{'loss': 4.95, 'grad_norm': 1.4695980548858643, 'learning_rate': 8.435400582648093e-05, 'epoch': 0.36}
+{'loss': 4.925, 'grad_norm': 1.4633044004440308, 'learning_rate': 8.300027453512227e-05, 'epoch': 0.37}
+{'loss': 4.9, 'grad_norm': 1.165751576423645, 'learning_rate': 8.160225377584234e-05, 'epoch': 0.38}
+{'loss': 4.9, 'grad_norm': 1.301156997680664, 'learning_rate': 8.016181982380682e-05, 'epoch': 0.39}
+{'loss': 4.9, 'grad_norm': 1.5606459379196167, 'learning_rate': 7.86809058766697e-05, 'epoch': 0.4}
+{'loss': 4.875, 'grad_norm': 1.4638819694519043, 'learning_rate': 7.716149946004034e-05, 'epoch': 0.41}
+{'loss': 4.85, 'grad_norm': 1.5884792804718018, 'learning_rate': 7.560563976003758e-05, 'epoch': 0.42}
+{'loss': 4.85, 'grad_norm': 1.6148778200149536, 'learning_rate': 7.40154148865103e-05, 'epoch': 0.43}
+{'loss': 4.825, 'grad_norm': 1.3683810234069824, 'learning_rate': 7.239295907059797e-05, 'epoch': 0.44}
+{'loss': 4.8, 'grad_norm': 1.599274754524231, 'learning_rate': 7.074044980039198e-05, 'epoch': 0.45}
+{'loss': 4.775, 'grad_norm': 1.42833411693573, 'learning_rate': 6.906010489854209e-05, 'epoch': 0.46}
+{'loss': 4.725, 'grad_norm': 1.3877066373825073, 'learning_rate': 6.735417954573014e-05, 'epoch': 0.47}
+{'loss': 4.725, 'grad_norm': 1.1621732711791992, 'learning_rate': 6.562496325400575e-05, 'epoch': 0.48}
+{'loss': 4.65, 'grad_norm': 1.5975037813186646, 'learning_rate': 6.387477679404618e-05, 'epoch': 0.49}
+{'loss': 4.675, 'grad_norm': 1.9804363250732422, 'learning_rate': 6.210596908046396e-05, 'epoch': 0.5}
+{'loss': 4.55, 'grad_norm': 1.6498953104019165, 'learning_rate': 6.032091401934305e-05, 'epoch': 0.51}
+{'loss': 4.55, 'grad_norm': 1.323880910873413, 'learning_rate': 5.852200732223372e-05, 'epoch': 0.52}
+{'loss': 4.525, 'grad_norm': 1.7040916681289673, 'learning_rate': 5.6711663290882776e-05, 'epoch': 0.53}
+{'loss': 4.5, 'grad_norm': 1.3672089576721191, 'learning_rate': 5.489231157701382e-05, 'epoch': 0.54}
+{'loss': 4.425, 'grad_norm': 1.568105936050415, 'learning_rate': 5.3066393921506386e-05, 'epoch': 0.55}
+{'loss': 4.4, 'grad_norm': 1.221864104270935, 'learning_rate': 5.123636087735043e-05, 'epoch': 0.56}
+{'loss': 4.4, 'grad_norm': 1.1270248889923096, 'learning_rate': 4.940466852077395e-05, 'epoch': 0.57}
+{'loss': 4.375, 'grad_norm': 1.1359977722167969, 'learning_rate': 4.7573775154958084e-05, 'epoch': 0.58}
+{'loss': 4.375, 'grad_norm': 1.2061432600021362, 'learning_rate': 4.574613801076336e-05, 'epoch': 0.59}
+{'loss': 4.35, 'grad_norm': 1.060957431793213, 'learning_rate': 4.392420994889498e-05, 'epoch': 0.6}
+{'loss': 4.3, 'grad_norm': 1.231386423110962, 'learning_rate': 4.211043616793355e-05, 'epoch': 0.61}
+{'loss': 4.3, 'grad_norm': 1.0712546110153198, 'learning_rate': 4.0307250922648706e-05, 'epoch': 0.62}
+{'loss': 4.3, 'grad_norm': 1.3563507795333862, 'learning_rate': 3.851707425700081e-05, 'epoch': 0.63}
+{'loss': 4.3, 'grad_norm': 1.1497851610183716, 'learning_rate': 3.674230875621444e-05, 'epoch': 0.64}
+{'loss': 4.3, 'grad_norm': 1.2327932119369507, 'learning_rate': 3.4985336322283545e-05, 'epoch': 0.65}
+{'loss': 4.3, 'grad_norm': 0.9633530378341675, 'learning_rate': 3.324851497723509e-05, 'epoch': 0.66}
+{'loss': 4.275, 'grad_norm': 1.017788052558899, 'learning_rate': 3.153417569844219e-05, 'epoch': 0.67}
+{'loss': 4.25, 'grad_norm': 1.2124215364456177, 'learning_rate': 2.9844619290233394e-05, 'epoch': 0.68}
+{'loss': 4.25, 'grad_norm': 0.927707850933075, 'learning_rate': 2.8182113295997247e-05, 'epoch': 0.69}
+{'loss': 4.25, 'grad_norm': 1.0036091804504395, 'learning_rate': 2.6548888954926086e-05, 'epoch': 0.7}
+{'loss': 4.25, 'grad_norm': 0.8674471974372864, 'learning_rate': 2.4947138207483483e-05, 'epoch': 0.71}
+{'loss': 4.225, 'grad_norm': 1.0043777227401733, 'learning_rate': 2.3379010753614244e-05, 'epoch': 0.72}
+{'loss': 4.225, 'grad_norm': 0.876214861869812, 'learning_rate': 2.184661116764518e-05, 'epoch': 0.73}
+{'loss': 4.225, 'grad_norm': 0.7757992744445801, 'learning_rate': 2.0351996073748713e-05, 'epoch': 0.74}
+{'loss': 4.225, 'grad_norm': 0.8760884404182434, 'learning_rate': 1.889717138576006e-05, 'epoch': 0.75}
+{'loss': 4.25, 'grad_norm': 0.7692497968673706, 'learning_rate': 1.7484089615052447e-05, 'epoch': 0.76}
+{'loss': 4.225, 'grad_norm': 0.943370521068573, 'learning_rate': 1.611464725008349e-05, 'epoch': 0.77}
+{'loss': 4.225, 'grad_norm': 0.729579508304596, 'learning_rate': 1.479068221112957e-05, 'epoch': 0.78}
+{'loss': 4.2, 'grad_norm': 0.5782512426376343, 'learning_rate': 1.3513971383624097e-05, 'epoch': 0.79}
+{'loss': 4.2, 'grad_norm': 0.6344797015190125, 'learning_rate': 1.2286228233410518e-05, 'epoch': 0.8}
+{'loss': 4.2, 'grad_norm': 0.6966836452484131, 'learning_rate': 1.1109100507110132e-05, 'epoch': 0.81}
+{'loss': 4.2, 'grad_norm': 0.563206136226654, 'learning_rate': 9.984168020691364e-06, 'epoch': 0.82}
+{'loss': 4.2, 'grad_norm': 0.6034213304519653, 'learning_rate': 8.91294053920838e-06, 'epoch': 0.83}
+{'loss': 4.2, 'grad_norm': 0.5396394729614258, 'learning_rate': 7.896855750554555e-06, 'epoch': 0.84}
+{'loss': 4.2, 'grad_norm': 0.581977903842926, 'learning_rate': 6.937277335950326e-06, 'epoch': 0.85}
+{'loss': 4.2, 'grad_norm': 0.5340302586555481, 'learning_rate': 6.035493139754866e-06, 'epoch': 0.86}
+{'loss': 4.2, 'grad_norm': 0.5159553289413452, 'learning_rate': 5.19271344105805e-06, 'epoch': 0.87}
+{'loss': 4.2, 'grad_norm': 0.5285127758979797, 'learning_rate': 4.410069329372152e-06, 'epoch': 0.88}
+{'loss': 4.2, 'grad_norm': 0.4975644648075104, 'learning_rate': 3.688611186603619e-06, 'epoch': 0.89}
+{'loss': 4.2, 'grad_norm': 0.4506802260875702, 'learning_rate': 3.0293072773417697e-06, 'epoch': 0.9}
+{'loss': 4.175, 'grad_norm': 0.463019460439682, 'learning_rate': 2.433042449356848e-06, 'epoch': 0.91}
+{'loss': 4.2, 'grad_norm': 0.4395693242549896, 'learning_rate': 1.9006169460511702e-06, 'epoch': 0.92}
+{'loss': 4.2, 'grad_norm': 0.41842949390411377, 'learning_rate': 1.432745332457347e-06, 'epoch': 0.93}
+{'loss': 4.2, 'grad_norm': 0.3763442635536194, 'learning_rate': 1.030055536224872e-06, 'epoch': 0.94}
+{'loss': 4.2, 'grad_norm': 0.3809698224067688, 'learning_rate': 6.93088004882253e-07, 'epoch': 0.95}
+{'loss': 4.2, 'grad_norm': 0.38770580291748047, 'learning_rate': 4.222949805056553e-07, 'epoch': 0.96}
+{'loss': 4.2, 'grad_norm': 0.3786480724811554, 'learning_rate': 2.180398927675631e-07, 'epoch': 0.97}
+{'loss': 4.2, 'grad_norm': 0.38657763600349426, 'learning_rate': 8.059687118004977e-08, 'epoch': 0.98}
+{'loss': 4.2, 'grad_norm': 0.3846471905708313, 'learning_rate': 1.015037718717915e-08, 'epoch': 0.99}
+[2025-02-16 04:22:24,735] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step1971 is about to be saved!
+[2025-02-16 04:22:24,739] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /data1/gcq/runtime/miniphi3/checkpoint-1971/global_step1971/mp_rank_00_model_states.pt
+[2025-02-16 04:22:24,739] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime/miniphi3/checkpoint-1971/global_step1971/mp_rank_00_model_states.pt...
+[2025-02-16 04:22:25,195] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime/miniphi3/checkpoint-1971/global_step1971/mp_rank_00_model_states.pt.
+[2025-02-16 04:22:25,197] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime/miniphi3/checkpoint-1971/global_step1971/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-02-16 04:22:25,615] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime/miniphi3/checkpoint-1971/global_step1971/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-02-16 04:22:25,622] [INFO] [engine.py:3483:_save_zero_checkpoint] zero checkpoint saved /data1/gcq/runtime/miniphi3/checkpoint-1971/global_step1971/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-02-16 04:22:25,622] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step1971 is ready now!
+{'train_runtime': 14003.7762, 'train_samples_per_second': 270.328, 'train_steps_per_second': 0.141, 'train_loss': 5.254185692541857, 'epoch': 1.0}
+Perplexity: 90.19
+Perplexity: 90.19Perplexity: 90.19
+
+Perplexity: 90.19
+Perplexity: 90.19
+Perplexity: 90.19
+[2025-02-16 04:26:45,224] [INFO] [launch.py:351:main] Process 3752010 exits successfully.
+[2025-02-16 04:26:45,225] [INFO] [launch.py:351:main] Process 3752007 exits successfully.
+[2025-02-16 04:26:45,225] [INFO] [launch.py:351:main] Process 3752008 exits successfully.
+[2025-02-16 04:26:45,225] [INFO] [launch.py:351:main] Process 3752009 exits successfully.
+[2025-02-16 04:26:45,226] [INFO] [launch.py:351:main] Process 3752011 exits successfully.
+[2025-02-16 04:26:45,226] [INFO] [launch.py:351:main] Process 3752006 exits successfully.

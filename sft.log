@@ -1,0 +1,1096 @@
+[2025-02-16 15:49:19,815] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[2025-02-16 15:49:21,032] [WARNING] [runner.py:202:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+[2025-02-16 15:49:21,032] [INFO] [runner.py:568:main] cmd = /home/gcq/anaconda3/envs/phi/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMSwgMiwgNCwgNSwgNiwgN119 --master_addr=127.0.0.1 --master_port=29500 --enable_each_rank_log=None sft_miniphi3.py --deepspeed deepspeed_configs/ds_config.json
+[2025-02-16 15:49:23,681] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[2025-02-16 15:49:25,136] [INFO] [launch.py:146:main] WORLD INFO DICT: {'localhost': [1, 2, 4, 5, 6, 7]}
+[2025-02-16 15:49:25,136] [INFO] [launch.py:152:main] nnodes=1, num_local_procs=6, node_rank=0
+[2025-02-16 15:49:25,136] [INFO] [launch.py:163:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1, 2, 3, 4, 5]})
+[2025-02-16 15:49:25,136] [INFO] [launch.py:164:main] dist_world_size=6
+[2025-02-16 15:49:25,136] [INFO] [launch.py:168:main] Setting CUDA_VISIBLE_DEVICES=1,2,4,5,6,7
+[2025-02-16 15:49:25,153] [INFO] [launch.py:256:main] process 4143569 spawned with command: ['/home/gcq/anaconda3/envs/phi/bin/python', '-u', 'sft_miniphi3.py', '--local_rank=0', '--deepspeed', 'deepspeed_configs/ds_config.json']
+[2025-02-16 15:49:25,166] [INFO] [launch.py:256:main] process 4143570 spawned with command: ['/home/gcq/anaconda3/envs/phi/bin/python', '-u', 'sft_miniphi3.py', '--local_rank=1', '--deepspeed', 'deepspeed_configs/ds_config.json']
+[2025-02-16 15:49:25,180] [INFO] [launch.py:256:main] process 4143571 spawned with command: ['/home/gcq/anaconda3/envs/phi/bin/python', '-u', 'sft_miniphi3.py', '--local_rank=2', '--deepspeed', 'deepspeed_configs/ds_config.json']
+[2025-02-16 15:49:25,191] [INFO] [launch.py:256:main] process 4143572 spawned with command: ['/home/gcq/anaconda3/envs/phi/bin/python', '-u', 'sft_miniphi3.py', '--local_rank=3', '--deepspeed', 'deepspeed_configs/ds_config.json']
+[2025-02-16 15:49:25,205] [INFO] [launch.py:256:main] process 4143573 spawned with command: ['/home/gcq/anaconda3/envs/phi/bin/python', '-u', 'sft_miniphi3.py', '--local_rank=4', '--deepspeed', 'deepspeed_configs/ds_config.json']
+[2025-02-16 15:49:25,221] [INFO] [launch.py:256:main] process 4143574 spawned with command: ['/home/gcq/anaconda3/envs/phi/bin/python', '-u', 'sft_miniphi3.py', '--local_rank=5', '--deepspeed', 'deepspeed_configs/ds_config.json']
+[2025-02-16 15:49:29,706] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-02-16 15:49:29,718] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-02-16 15:49:29,847] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[2025-02-16 15:49:29,892] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[2025-02-16 15:49:29,930] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[2025-02-16 15:49:30,070] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[2025-02-16 15:49:34,255] [INFO] [comm.py:637:init_distributed] cdb=None
+[2025-02-16 15:49:34,260] [INFO] [comm.py:637:init_distributed] cdb=None
+[2025-02-16 15:49:34,429] [INFO] [comm.py:637:init_distributed] cdb=None
+[2025-02-16 15:49:34,429] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2025-02-16 15:49:34,566] [INFO] [comm.py:637:init_distributed] cdb=None
+[2025-02-16 15:49:34,613] [INFO] [comm.py:637:init_distributed] cdb=None
+[2025-02-16 15:49:34,672] [INFO] [comm.py:637:init_distributed] cdb=None
+MiniPhi3(
+  (model): Phi3Model(
+    (embed_tokens): Embedding(32064, 768)
+    (embed_dropout): Dropout(p=0.0, inplace=False)
+    (layers): ModuleList(
+      (0-11): 12 x Phi3DecoderLayer(
+        (self_attn): Phi3FlashAttention2(
+          (o_proj): Linear(in_features=768, out_features=768, bias=False)
+          (qkv_proj): Linear(in_features=768, out_features=2304, bias=False)
+          (rotary_emb): Phi3RotaryEmbedding()
+        )
+        (mlp): Phi3MLP(
+          (gate_up_proj): Linear(in_features=768, out_features=4096, bias=False)
+          (down_proj): Linear(in_features=2048, out_features=768, bias=False)
+          (activation_fn): SiLU()
+        )
+        (input_layernorm): Phi3RMSNorm()
+        (resid_attn_dropout): Dropout(p=0.0, inplace=False)
+        (resid_mlp_dropout): Dropout(p=0.0, inplace=False)
+        (post_attention_layernorm): Phi3RMSNorm()
+      )
+    )
+    (norm): Phi3RMSNorm()
+  )
+  (lm_head): Linear(in_features=768, out_features=32064, bias=False)
+)
+MiniPhi3(
+  (model): Phi3Model(
+    (embed_tokens): Embedding(32064, 768)
+    (embed_dropout): Dropout(p=0.0, inplace=False)
+    (layers): ModuleList(
+      (0-11): 12 x Phi3DecoderLayer(
+        (self_attn): Phi3FlashAttention2(
+          (o_proj): Linear(in_features=768, out_features=768, bias=False)
+          (qkv_proj): Linear(in_features=768, out_features=2304, bias=False)
+          (rotary_emb): Phi3RotaryEmbedding()
+        )
+        (mlp): Phi3MLP(
+          (gate_up_proj): Linear(in_features=768, out_features=4096, bias=False)
+          (down_proj): Linear(in_features=2048, out_features=768, bias=False)
+          (activation_fn): SiLU()
+        )
+        (input_layernorm): Phi3RMSNorm()
+        (resid_attn_dropout): Dropout(p=0.0, inplace=False)
+        (resid_mlp_dropout): Dropout(p=0.0, inplace=False)
+        (post_attention_layernorm): Phi3RMSNorm()
+      )
+    )
+    (norm): Phi3RMSNorm()
+  )
+  (lm_head): Linear(in_features=768, out_features=32064, bias=False)
+)
+MiniPhi3(
+  (model): Phi3Model(
+    (embed_tokens): Embedding(32064, 768)
+    (embed_dropout): Dropout(p=0.0, inplace=False)
+    (layers): ModuleList(
+      (0-11): 12 x Phi3DecoderLayer(
+        (self_attn): Phi3FlashAttention2(
+          (o_proj): Linear(in_features=768, out_features=768, bias=False)
+          (qkv_proj): Linear(in_features=768, out_features=2304, bias=False)
+          (rotary_emb): Phi3RotaryEmbedding()
+        )
+        (mlp): Phi3MLP(
+          (gate_up_proj): Linear(in_features=768, out_features=4096, bias=False)
+          (down_proj): Linear(in_features=2048, out_features=768, bias=False)
+          (activation_fn): SiLU()
+        )
+        (input_layernorm): Phi3RMSNorm()
+        (resid_attn_dropout): Dropout(p=0.0, inplace=False)
+        (resid_mlp_dropout): Dropout(p=0.0, inplace=False)
+        (post_attention_layernorm): Phi3RMSNorm()
+      )
+    )
+    (norm): Phi3RMSNorm()
+  )
+  (lm_head): Linear(in_features=768, out_features=32064, bias=False)
+)
+Dataset({
+    features: ['instruction', 'input', 'output'],
+    num_rows: 2479811
+})
+Dataset({
+    features: ['instruction', 'input', 'output'],
+    num_rows: 291742
+})
+========================================++++++++++++++++++++++++======================
+##############################Fine Tuning Use LoRA##############################
+Dataset({
+    features: ['instruction', 'input', 'output'],
+    num_rows: 2479811
+})
+Dataset({
+    features: ['instruction', 'input', 'output'],
+    num_rows: 291742
+})
+========================================++++++++++++++++++++++++======================
+##############################Fine Tuning Use LoRA##############################
+Dataset({
+    features: ['instruction', 'input', 'output'],
+    num_rows: 2479811
+})
+Dataset({
+    features: ['instruction', 'input', 'output'],
+    num_rows: 291742
+})
+========================================++++++++++++++++++++++++======================
+##############################Fine Tuning Use LoRA##############################
+MiniPhi3(
+  (model): Phi3Model(
+    (embed_tokens): Embedding(32064, 768)
+    (embed_dropout): Dropout(p=0.0, inplace=False)
+    (layers): ModuleList(
+      (0-11): 12 x Phi3DecoderLayer(
+        (self_attn): Phi3FlashAttention2(
+          (o_proj): Linear(in_features=768, out_features=768, bias=False)
+          (qkv_proj): Linear(in_features=768, out_features=2304, bias=False)
+          (rotary_emb): Phi3RotaryEmbedding()
+        )
+        (mlp): Phi3MLP(
+          (gate_up_proj): Linear(in_features=768, out_features=4096, bias=False)
+          (down_proj): Linear(in_features=2048, out_features=768, bias=False)
+          (activation_fn): SiLU()
+        )
+        (input_layernorm): Phi3RMSNorm()
+        (resid_attn_dropout): Dropout(p=0.0, inplace=False)
+        (resid_mlp_dropout): Dropout(p=0.0, inplace=False)
+        (post_attention_layernorm): Phi3RMSNorm()
+      )
+    )
+    (norm): Phi3RMSNorm()
+  )
+  (lm_head): Linear(in_features=768, out_features=32064, bias=False)
+)
+MiniPhi3(
+  (model): Phi3Model(
+    (embed_tokens): Embedding(32064, 768)
+    (embed_dropout): Dropout(p=0.0, inplace=False)
+    (layers): ModuleList(
+      (0-11): 12 x Phi3DecoderLayer(
+        (self_attn): Phi3FlashAttention2(
+          (o_proj): Linear(in_features=768, out_features=768, bias=False)
+          (qkv_proj): Linear(in_features=768, out_features=2304, bias=False)
+          (rotary_emb): Phi3RotaryEmbedding()
+        )
+        (mlp): Phi3MLP(
+          (gate_up_proj): Linear(in_features=768, out_features=4096, bias=False)
+          (down_proj): Linear(in_features=2048, out_features=768, bias=False)
+          (activation_fn): SiLU()
+        )
+        (input_layernorm): Phi3RMSNorm()
+        (resid_attn_dropout): Dropout(p=0.0, inplace=False)
+        (resid_mlp_dropout): Dropout(p=0.0, inplace=False)
+        (post_attention_layernorm): Phi3RMSNorm()
+      )
+    )
+    (norm): Phi3RMSNorm()
+  )
+  (lm_head): Linear(in_features=768, out_features=32064, bias=False)
+)
+MiniPhi3(
+  (model): Phi3Model(
+    (embed_tokens): Embedding(32064, 768)
+    (embed_dropout): Dropout(p=0.0, inplace=False)
+    (layers): ModuleList(
+      (0-11): 12 x Phi3DecoderLayer(
+        (self_attn): Phi3FlashAttention2(
+          (o_proj): Linear(in_features=768, out_features=768, bias=False)
+          (qkv_proj): Linear(in_features=768, out_features=2304, bias=False)
+          (rotary_emb): Phi3RotaryEmbedding()
+        )
+        (mlp): Phi3MLP(
+          (gate_up_proj): Linear(in_features=768, out_features=4096, bias=False)
+          (down_proj): Linear(in_features=2048, out_features=768, bias=False)
+          (activation_fn): SiLU()
+        )
+        (input_layernorm): Phi3RMSNorm()
+        (resid_attn_dropout): Dropout(p=0.0, inplace=False)
+        (resid_mlp_dropout): Dropout(p=0.0, inplace=False)
+        (post_attention_layernorm): Phi3RMSNorm()
+      )
+    )
+    (norm): Phi3RMSNorm()
+  )
+  (lm_head): Linear(in_features=768, out_features=32064, bias=False)
+)
+Dataset({
+    features: ['instruction', 'input', 'output'],
+    num_rows: 2479811
+})
+Dataset({
+    features: ['instruction', 'input', 'output'],
+    num_rows: 291742
+})
+========================================++++++++++++++++++++++++======================
+##############################Fine Tuning Use LoRA##############################
+Dataset({
+    features: ['instruction', 'input', 'output'],
+    num_rows: 2479811
+})
+Dataset({
+    features: ['instruction', 'input', 'output'],
+    num_rows: 291742
+})
+========================================++++++++++++++++++++++++======================
+##############################Fine Tuning Use LoRA##############################
+Dataset({
+    features: ['instruction', 'input', 'output'],
+    num_rows: 2479811
+})
+Dataset({
+    features: ['instruction', 'input', 'output'],
+    num_rows: 291742
+})
+========================================++++++++++++++++++++++++======================
+##############################Fine Tuning Use LoRA##############################
+[2025-02-16 16:19:48,822] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.14.2, git-hash=unknown, git-branch=unknown
+[2025-02-16 16:20:07,513] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2025-02-16 16:20:07,517] [INFO] [logging.py:96:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2025-02-16 16:20:07,517] [INFO] [logging.py:96:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2025-02-16 16:20:07,527] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW
+[2025-02-16 16:20:07,527] [INFO] [utils.py:56:is_zero_supported_optimizer] Checking ZeRO support for optimizer=AdamW type=<class 'torch.optim.adamw.AdamW'>
+[2025-02-16 16:20:07,527] [INFO] [logging.py:96:log_dist] [Rank 0] Creating torch.bfloat16 ZeRO stage 2 optimizer
+[2025-02-16 16:20:07,527] [INFO] [stage_1_and_2.py:148:__init__] Reduce bucket size 500000000
+[2025-02-16 16:20:07,527] [INFO] [stage_1_and_2.py:149:__init__] Allgather bucket size 500000000
+[2025-02-16 16:20:07,528] [INFO] [stage_1_and_2.py:150:__init__] CPU Offload: False
+[2025-02-16 16:20:07,528] [INFO] [stage_1_and_2.py:151:__init__] Round robin gradient partitioning: False
+[2025-02-16 16:20:08,358] [INFO] [utils.py:779:see_memory_usage] Before initializing optimizer states
+[2025-02-16 16:20:08,359] [INFO] [utils.py:780:see_memory_usage] MA 0.28 GB         Max_MA 0.28 GB         CA 0.29 GB         Max_CA 0 GB 
+[2025-02-16 16:20:08,359] [INFO] [utils.py:787:see_memory_usage] CPU Virtual Memory:  used = 21.13 GB, percent = 16.8%
+[2025-02-16 16:20:08,525] [INFO] [utils.py:779:see_memory_usage] After initializing optimizer states
+[2025-02-16 16:20:08,525] [INFO] [utils.py:780:see_memory_usage] MA 0.28 GB         Max_MA 0.28 GB         CA 0.31 GB         Max_CA 0 GB 
+[2025-02-16 16:20:08,526] [INFO] [utils.py:787:see_memory_usage] CPU Virtual Memory:  used = 21.36 GB, percent = 17.0%
+[2025-02-16 16:20:08,526] [INFO] [stage_1_and_2.py:543:__init__] optimizer state initialized
+[2025-02-16 16:20:08,699] [INFO] [utils.py:779:see_memory_usage] After initializing ZeRO optimizer
+[2025-02-16 16:20:08,699] [INFO] [utils.py:780:see_memory_usage] MA 0.28 GB         Max_MA 0.28 GB         CA 0.31 GB         Max_CA 0 GB 
+[2025-02-16 16:20:08,700] [INFO] [utils.py:787:see_memory_usage] CPU Virtual Memory:  used = 21.51 GB, percent = 17.1%
+[2025-02-16 16:20:08,701] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Final Optimizer = AdamW
+[2025-02-16 16:20:08,701] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed using client LR scheduler
+[2025-02-16 16:20:08,701] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
+[2025-02-16 16:20:08,701] [INFO] [logging.py:96:log_dist] [Rank 0] step=0, skipped=0, lr=[0.0], mom=[(0.9, 0.999)]
+[2025-02-16 16:20:08,702] [INFO] [config.py:996:print] DeepSpeedEngine configuration:
+[2025-02-16 16:20:08,702] [INFO] [config.py:1000:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2025-02-16 16:20:08,702] [INFO] [config.py:1000:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2025-02-16 16:20:08,702] [INFO] [config.py:1000:print]   amp_enabled .................. False
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   amp_params ................... False
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   bfloat16_enabled ............. True
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   bfloat16_immediate_grad_update  False
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   checkpoint_parallel_write_pipeline  False
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   checkpoint_tag_validation_enabled  True
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   checkpoint_tag_validation_fail  False
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x734bbba22760>
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   communication_data_type ...... None
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   compile_config ............... enabled=False backend='inductor' kwargs={}
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   curriculum_enabled_legacy .... False
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   curriculum_params_legacy ..... False
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   data_efficiency_enabled ...... False
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   dataloader_drop_last ......... False
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   disable_allgather ............ False
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   dump_state ................... False
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   dynamic_loss_scale_args ...... None
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   eigenvalue_enabled ........... False
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   eigenvalue_gas_boundary_resolution  1
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2025-02-16 16:20:08,703] [INFO] [config.py:1000:print]   eigenvalue_layer_num ......... 0
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   eigenvalue_max_iter .......... 100
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   eigenvalue_stability ......... 1e-06
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   eigenvalue_tol ............... 0.01
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   eigenvalue_verbose ........... False
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   elasticity_enabled ........... False
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   fp16_auto_cast ............... None
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   fp16_enabled ................. False
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   fp16_master_weights_and_gradients  False
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   global_rank .................. 0
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   grad_accum_dtype ............. None
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   gradient_accumulation_steps .. 16
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   gradient_clipping ............ 1.0
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   gradient_predivide_factor .... 1.0
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   graph_harvesting ............. False
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   initial_dynamic_scale ........ 1
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   load_universal_checkpoint .... False
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   loss_scale ................... 1.0
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   memory_breakdown ............. False
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   mics_hierarchial_params_gather  False
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   mics_shard_size .............. -1
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   optimizer_legacy_fusion ...... False
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   optimizer_name ............... None
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   optimizer_params ............. None
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   pld_enabled .................. False
+[2025-02-16 16:20:08,704] [INFO] [config.py:1000:print]   pld_params ................... False
+[2025-02-16 16:20:08,705] [INFO] [config.py:1000:print]   prescale_gradients ........... False
+[2025-02-16 16:20:08,705] [INFO] [config.py:1000:print]   scheduler_name ............... None
+[2025-02-16 16:20:08,705] [INFO] [config.py:1000:print]   scheduler_params ............. None
+[2025-02-16 16:20:08,705] [INFO] [config.py:1000:print]   seq_parallel_communication_data_type  torch.float32
+[2025-02-16 16:20:08,705] [INFO] [config.py:1000:print]   sparse_attention ............. None
+[2025-02-16 16:20:08,705] [INFO] [config.py:1000:print]   sparse_gradients_enabled ..... False
+[2025-02-16 16:20:08,705] [INFO] [config.py:1000:print]   steps_per_print .............. inf
+[2025-02-16 16:20:08,705] [INFO] [config.py:1000:print]   train_batch_size ............. 3840
+[2025-02-16 16:20:08,705] [INFO] [config.py:1000:print]   train_micro_batch_size_per_gpu  40
+[2025-02-16 16:20:08,705] [INFO] [config.py:1000:print]   use_data_before_expert_parallel_  False
+[2025-02-16 16:20:08,705] [INFO] [config.py:1000:print]   use_node_local_storage ....... False
+[2025-02-16 16:20:08,705] [INFO] [config.py:1000:print]   wall_clock_breakdown ......... False
+[2025-02-16 16:20:08,705] [INFO] [config.py:1000:print]   weight_quantization_config ... None
+[2025-02-16 16:20:08,705] [INFO] [config.py:1000:print]   world_size ................... 6
+[2025-02-16 16:20:08,705] [INFO] [config.py:1000:print]   zero_allow_untested_optimizer  True
+[2025-02-16 16:20:08,705] [INFO] [config.py:1000:print]   zero_config .................. stage=2 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500000000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500000000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=None sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50,000,000 param_persistence_threshold=100,000 model_persistence_threshold=sys.maxsize max_live_parameters=1,000,000,000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True
+[2025-02-16 16:20:08,705] [INFO] [config.py:1000:print]   zero_enabled ................. True
+[2025-02-16 16:20:08,705] [INFO] [config.py:1000:print]   zero_force_ds_cpu_optimizer .. True
+[2025-02-16 16:20:08,705] [INFO] [config.py:1000:print]   zero_optimization_stage ...... 2
+[2025-02-16 16:20:08,705] [INFO] [config.py:986:print_user_config]   json = {
+    "train_batch_size": 3.840000e+03, 
+    "train_micro_batch_size_per_gpu": 40, 
+    "gradient_accumulation_steps": 16, 
+    "gradient_clipping": 1.0, 
+    "zero_allow_untested_optimizer": true, 
+    "fp16": {
+        "enabled": false, 
+        "loss_scale": 0, 
+        "initial_scale_power": 16, 
+        "loss_scale_window": 1000, 
+        "hysteresis": 2, 
+        "min_loss_scale": 1
+    }, 
+    "zero_optimization": {
+        "stage": 2, 
+        "allgather_partitions": true, 
+        "allgather_bucket_size": 5.000000e+08, 
+        "reduce_scatter": true, 
+        "reduce_bucket_size": 5.000000e+08, 
+        "overlap_comm": false, 
+        "contiguous_gradients": true
+    }, 
+    "steps_per_print": inf, 
+    "bf16": {
+        "enabled": true
+    }
+}
+{'loss': 4.8797, 'grad_norm': 0.1686164289712906, 'learning_rate': 6.666666666666667e-07, 'epoch': 0.0}
+{'loss': 4.877, 'grad_norm': 0.16130860149860382, 'learning_rate': 6.666666666666667e-06, 'epoch': 0.04}
+{'loss': 4.8751, 'grad_norm': 0.13442879915237427, 'learning_rate': 9.99717183296762e-06, 'epoch': 0.08}
+{'loss': 4.8615, 'grad_norm': 0.11807702481746674, 'learning_rate': 9.974565689558228e-06, 'epoch': 0.12}
+{'loss': 4.8414, 'grad_norm': 0.11052927374839783, 'learning_rate': 9.929455668128129e-06, 'epoch': 0.17}
+{'loss': 4.8236, 'grad_norm': 0.10387755185365677, 'learning_rate': 9.862045836827821e-06, 'epoch': 0.21}
+{'eval_loss': 4.831025123596191, 'eval_runtime': 103.6796, 'eval_samples_per_second': 1241.073, 'eval_steps_per_second': 5.179, 'epoch': 0.21}
+[2025-02-16 16:31:01,096] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step50 is about to be saved!
+[2025-02-16 16:31:01,104] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-50/global_step50/mp_rank_00_model_states.pt
+[2025-02-16 16:31:01,104] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-50/global_step50/mp_rank_00_model_states.pt...
+[2025-02-16 16:31:01,134] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-50/global_step50/mp_rank_00_model_states.pt.
+[2025-02-16 16:31:01,137] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-50/global_step50/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-02-16 16:31:01,174] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-50/global_step50/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-02-16 16:31:01,174] [INFO] [engine.py:3483:_save_zero_checkpoint] zero checkpoint saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-50/global_step50/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-02-16 16:31:01,174] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step50 is ready now!
+{'loss': 4.8047, 'grad_norm': 0.10223780572414398, 'learning_rate': 9.772641143408652e-06, 'epoch': 0.25}
+{'loss': 4.7865, 'grad_norm': 0.10079281777143478, 'learning_rate': 9.661646035704009e-06, 'epoch': 0.29}
+{'loss': 4.7658, 'grad_norm': 0.10126020014286041, 'learning_rate': 9.52956263199327e-06, 'epoch': 0.33}
+{'loss': 4.7455, 'grad_norm': 0.10085010528564453, 'learning_rate': 9.376988449525405e-06, 'epoch': 0.37}
+{'loss': 4.7346, 'grad_norm': 0.1019207313656807, 'learning_rate': 9.204613701477935e-06, 'epoch': 0.41}
+{'eval_loss': 4.739313125610352, 'eval_runtime': 103.4445, 'eval_samples_per_second': 1243.894, 'eval_steps_per_second': 5.191, 'epoch': 0.41}
+[2025-02-16 16:41:53,339] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step100 is about to be saved!
+[2025-02-16 16:41:53,347] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-100/global_step100/mp_rank_00_model_states.pt
+[2025-02-16 16:41:53,347] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-100/global_step100/mp_rank_00_model_states.pt...
+[2025-02-16 16:41:53,374] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-100/global_step100/mp_rank_00_model_states.pt.
+[2025-02-16 16:41:53,376] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-100/global_step100/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-02-16 16:41:53,408] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-100/global_step100/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-02-16 16:41:53,409] [INFO] [engine.py:3483:_save_zero_checkpoint] zero checkpoint saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-100/global_step100/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-02-16 16:41:53,409] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step100 is ready now!
+{'loss': 4.7116, 'grad_norm': 0.09846845269203186, 'learning_rate': 9.013218174579189e-06, 'epoch': 0.46}
+{'loss': 4.6947, 'grad_norm': 0.09812481701374054, 'learning_rate': 8.803667701518857e-06, 'epoch': 0.5}
+{'loss': 4.6774, 'grad_norm': 0.09863299876451492, 'learning_rate': 8.576910244104905e-06, 'epoch': 0.54}
+{'loss': 4.6605, 'grad_norm': 0.0966322273015976, 'learning_rate': 8.333971604885817e-06, 'epoch': 0.58}
+{'loss': 4.6459, 'grad_norm': 0.09503775089979172, 'learning_rate': 8.075950786637847e-06, 'epoch': 0.62}
+{'eval_loss': 4.656360149383545, 'eval_runtime': 103.6969, 'eval_samples_per_second': 1240.866, 'eval_steps_per_second': 5.179, 'epoch': 0.62}
+[2025-02-16 16:54:11,992] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step150 is about to be saved!
+[2025-02-16 16:54:12,000] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-150/global_step150/mp_rank_00_model_states.pt
+[2025-02-16 16:54:12,000] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-150/global_step150/mp_rank_00_model_states.pt...
+[2025-02-16 16:54:12,029] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-150/global_step150/mp_rank_00_model_states.pt.
+[2025-02-16 16:54:12,031] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-150/global_step150/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-02-16 16:54:12,057] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-150/global_step150/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-02-16 16:54:12,057] [INFO] [engine.py:3483:_save_zero_checkpoint] zero checkpoint saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-150/global_step150/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-02-16 16:54:12,057] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step150 is ready now!
+{'loss': 4.6326, 'grad_norm': 0.09436966478824615, 'learning_rate': 7.804015020710028e-06, 'epoch': 0.66}
+{'loss': 4.6176, 'grad_norm': 0.09160356968641281, 'learning_rate': 7.519394486717583e-06, 'epoch': 0.7}
+{'loss': 4.6041, 'grad_norm': 0.08980178087949753, 'learning_rate': 7.223376747470792e-06, 'epoch': 0.74}
+{'loss': 4.5933, 'grad_norm': 0.08838454633951187, 'learning_rate': 6.9173009243144485e-06, 'epoch': 0.79}
+{'loss': 4.581, 'grad_norm': 0.08614835888147354, 'learning_rate': 6.602551639227486e-06, 'epoch': 0.83}
+{'eval_loss': 4.594819068908691, 'eval_runtime': 104.6076, 'eval_samples_per_second': 1230.063, 'eval_steps_per_second': 5.133, 'epoch': 0.83}
+[2025-02-16 17:05:06,238] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step200 is about to be saved!
+[2025-02-16 17:05:06,246] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-200/global_step200/mp_rank_00_model_states.pt
+[2025-02-16 17:05:06,246] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-200/global_step200/mp_rank_00_model_states.pt...
+[2025-02-16 17:05:06,275] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-200/global_step200/mp_rank_00_model_states.pt.
+[2025-02-16 17:05:06,277] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-200/global_step200/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-02-16 17:05:06,303] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-200/global_step200/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-02-16 17:05:06,303] [INFO] [engine.py:3483:_save_zero_checkpoint] zero checkpoint saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-200/global_step200/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-02-16 17:05:06,303] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step200 is ready now!
+{'loss': 4.5677, 'grad_norm': 0.08603595197200775, 'learning_rate': 6.280552751087384e-06, 'epoch': 0.87}
+{'loss': 4.5595, 'grad_norm': 0.08682994544506073, 'learning_rate': 5.9527609144352075e-06, 'epoch': 0.91}
+{'loss': 4.5525, 'grad_norm': 0.08468227833509445, 'learning_rate': 5.620658989880011e-06, 'epoch': 0.95}
+{'loss': 4.5455, 'grad_norm': 0.08186980336904526, 'learning_rate': 5.285749335952573e-06, 'epoch': 0.99}
+{'loss': 4.5363, 'grad_norm': 0.0826428160071373, 'learning_rate': 4.949547012754676e-06, 'epoch': 1.03}
+{'eval_loss': 4.553353309631348, 'eval_runtime': 103.8119, 'eval_samples_per_second': 1239.492, 'eval_steps_per_second': 5.173, 'epoch': 1.03}
+[2025-02-16 17:15:58,573] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step250 is about to be saved!
+[2025-02-16 17:15:58,582] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-250/global_step250/mp_rank_00_model_states.pt
+[2025-02-16 17:15:58,582] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-250/global_step250/mp_rank_00_model_states.pt...
+[2025-02-16 17:15:58,608] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-250/global_step250/mp_rank_00_model_states.pt.
+[2025-02-16 17:15:58,610] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-02-16 17:15:58,634] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-02-16 17:15:58,634] [INFO] [engine.py:3483:_save_zero_checkpoint] zero checkpoint saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-02-16 17:15:58,634] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step250 is ready now!
+{'loss': 4.5308, 'grad_norm': 0.08056262135505676, 'learning_rate': 4.613572928149172e-06, 'epoch': 1.08}
+{'loss': 4.5237, 'grad_norm': 0.07959429174661636, 'learning_rate': 4.279346957496023e-06, 'epoch': 1.12}
+{'loss': 4.5199, 'grad_norm': 0.08142989873886108, 'learning_rate': 3.948381068059171e-06, 'epoch': 1.16}
+{'loss': 4.5111, 'grad_norm': 0.07914739102125168, 'learning_rate': 3.6221724791879406e-06, 'epoch': 1.2}
+{'loss': 4.5105, 'grad_norm': 0.07809480279684067, 'learning_rate': 3.302196889214886e-06, 'epoch': 1.24}
+{'eval_loss': 4.527222156524658, 'eval_runtime': 103.4948, 'eval_samples_per_second': 1243.289, 'eval_steps_per_second': 5.189, 'epoch': 1.24}
+[2025-02-16 17:26:51,960] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step300 is about to be saved!
+[2025-02-16 17:26:51,985] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-300/global_step300/mp_rank_00_model_states.pt
+[2025-02-16 17:26:51,985] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-300/global_step300/mp_rank_00_model_states.pt...
+[2025-02-16 17:26:52,011] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-300/global_step300/mp_rank_00_model_states.pt.
+[2025-02-16 17:26:52,013] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-300/global_step300/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-02-16 17:26:52,036] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-300/global_step300/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-02-16 17:26:52,036] [INFO] [engine.py:3483:_save_zero_checkpoint] zero checkpoint saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-300/global_step300/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-02-16 17:26:52,036] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step300 is ready now!
+{'loss': 4.5057, 'grad_norm': 0.07655639201402664, 'learning_rate': 2.989901799710142e-06, 'epoch': 1.28}
+{'loss': 4.5042, 'grad_norm': 0.07856270670890808, 'learning_rate': 2.6866999672919198e-06, 'epoch': 1.32}
+{'loss': 4.4984, 'grad_norm': 0.07740828394889832, 'learning_rate': 2.393963012615817e-06, 'epoch': 1.37}
+{'loss': 4.4957, 'grad_norm': 0.07744965702295303, 'learning_rate': 2.1130152154544346e-06, 'epoch': 1.41}
+{'loss': 4.4918, 'grad_norm': 0.07494992017745972, 'learning_rate': 1.8451275239371337e-06, 'epoch': 1.45}
+{'eval_loss': 4.512166976928711, 'eval_runtime': 103.4545, 'eval_samples_per_second': 1243.774, 'eval_steps_per_second': 5.191, 'epoch': 1.45}
+[2025-02-16 17:37:43,967] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step350 is about to be saved!
+[2025-02-16 17:37:43,975] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-350/global_step350/mp_rank_00_model_states.pt
+[2025-02-16 17:37:43,975] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-350/global_step350/mp_rank_00_model_states.pt...
+[2025-02-16 17:37:44,001] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-350/global_step350/mp_rank_00_model_states.pt.
+[2025-02-16 17:37:44,003] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-350/global_step350/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-02-16 17:37:44,026] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-350/global_step350/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-02-16 17:37:44,027] [INFO] [engine.py:3483:_save_zero_checkpoint] zero checkpoint saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-350/global_step350/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-02-16 17:37:44,027] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step350 is ready now!
+{'loss': 4.4899, 'grad_norm': 0.0770798921585083, 'learning_rate': 1.591511805050772e-06, 'epoch': 1.49}
+{'loss': 4.4897, 'grad_norm': 0.07537765800952911, 'learning_rate': 1.3533153624110097e-06, 'epoch': 1.53}
+{'loss': 4.4883, 'grad_norm': 0.0745573341846466, 'learning_rate': 1.1316157461045553e-06, 'epoch': 1.57}
+{'loss': 4.4862, 'grad_norm': 0.0748031958937645, 'learning_rate': 9.274158780815767e-07, 'epoch': 1.61}
+{'loss': 4.4858, 'grad_norm': 0.07415939122438431, 'learning_rate': 7.416395151499223e-07, 'epoch': 1.66}
+{'eval_loss': 4.505003929138184, 'eval_runtime': 103.2927, 'eval_samples_per_second': 1245.722, 'eval_steps_per_second': 5.199, 'epoch': 1.66}
+[2025-02-16 17:48:35,985] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step400 is about to be saved!
+[2025-02-16 17:48:35,993] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-400/global_step400/mp_rank_00_model_states.pt
+[2025-02-16 17:48:35,993] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-400/global_step400/mp_rank_00_model_states.pt...
+[2025-02-16 17:48:36,018] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-400/global_step400/mp_rank_00_model_states.pt.
+[2025-02-16 17:48:36,021] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-400/global_step400/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-02-16 17:48:36,043] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-400/global_step400/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-02-16 17:48:36,044] [INFO] [engine.py:3483:_save_zero_checkpoint] zero checkpoint saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-400/global_step400/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-02-16 17:48:36,044] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step400 is ready now!
+{'loss': 4.4842, 'grad_norm': 0.07587818056344986, 'learning_rate': 5.75127070095643e-07, 'epoch': 1.7}
+{'loss': 4.4832, 'grad_norm': 0.07433570176362991, 'learning_rate': 4.2863180983413744e-07, 'epoch': 1.74}
+{'loss': 4.482, 'grad_norm': 0.07542134076356888, 'learning_rate': 3.028164477907125e-07, 'epoch': 1.78}
+{'loss': 4.4858, 'grad_norm': 0.07465728372335434, 'learning_rate': 1.9825014592587844e-07, 'epoch': 1.82}
+{'loss': 4.4824, 'grad_norm': 0.07362212240695953, 'learning_rate': 1.1540593996759441e-07, 'epoch': 1.86}
+{'eval_loss': 4.502864360809326, 'eval_runtime': 103.3129, 'eval_samples_per_second': 1245.479, 'eval_steps_per_second': 5.198, 'epoch': 1.86}
+[2025-02-16 17:59:28,961] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step450 is about to be saved!
+[2025-02-16 17:59:28,969] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-450/global_step450/mp_rank_00_model_states.pt
+[2025-02-16 17:59:28,969] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-450/global_step450/mp_rank_00_model_states.pt...
+[2025-02-16 17:59:28,995] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-450/global_step450/mp_rank_00_model_states.pt.
+[2025-02-16 17:59:28,998] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-450/global_step450/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-02-16 17:59:29,021] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-450/global_step450/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-02-16 17:59:29,021] [INFO] [engine.py:3483:_save_zero_checkpoint] zero checkpoint saved /data1/gcq/runtime//fine_tuned/sft/peft/checkpoint-450/global_step450/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-02-16 17:59:29,021] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step450 is ready now!
+{'loss': 4.4802, 'grad_norm': 0.07290315628051758, 'learning_rate': 5.465859949816299e-08, 'epoch': 1.9}
+{'loss': 4.4808, 'grad_norm': 0.07364872097969055, 'learning_rate': 1.6282932576279775e-08, 'epoch': 1.95}
+{'loss': 4.482, 'grad_norm': 0.07506625354290009, 'learning_rate': 4.5254256377913474e-10, 'epoch': 1.99}
+{'train_runtime': 6311.5782, 'train_samples_per_second': 294.0, 'train_steps_per_second': 0.076, 'train_loss': 4.597211497453238, 'epoch': 1.99}
+PeftModelForCausalLM(
+  (base_model): LoraModel(
+    (model): MiniPhi3(
+      (model): Phi3Model(
+        (embed_tokens): Embedding(32064, 768, padding_idx=0)
+        (embed_dropout): Dropout(p=0.0, inplace=False)
+        (layers): ModuleList(
+          (0-11): 12 x Phi3DecoderLayer(
+            (self_attn): Phi3FlashAttention2(
+              (o_proj): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=768, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=768, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (qkv_proj): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=2304, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=2304, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (rotary_emb): Phi3RotaryEmbedding()
+            )
+            (mlp): Phi3MLP(
+              (gate_up_proj): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (down_proj): lora.Linear(
+                (base_layer): Linear(in_features=2048, out_features=768, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=2048, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=768, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (activation_fn): SiLU()
+            )
+            (input_layernorm): Phi3RMSNorm()
+            (resid_attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_mlp_dropout): Dropout(p=0.0, inplace=False)
+            (post_attention_layernorm): Phi3RMSNorm()
+          )
+        )
+        (norm): Phi3RMSNorm()
+      )
+      (lm_head): Linear(in_features=768, out_features=32064, bias=False)
+    )
+  )
+)
+PeftModelForCausalLM(
+  (base_model): LoraModel(
+    (model): MiniPhi3(
+      (model): Phi3Model(
+        (embed_tokens): Embedding(32064, 768, padding_idx=0)
+        (embed_dropout): Dropout(p=0.0, inplace=False)
+        (layers): ModuleList(
+          (0-11): 12 x Phi3DecoderLayer(
+            (self_attn): Phi3FlashAttention2(
+              (o_proj): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=768, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=768, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (qkv_proj): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=2304, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=2304, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (rotary_emb): Phi3RotaryEmbedding()
+            )
+            (mlp): Phi3MLP(
+              (gate_up_proj): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (down_proj): lora.Linear(
+                (base_layer): Linear(in_features=2048, out_features=768, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=2048, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=768, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (activation_fn): SiLU()
+            )
+            (input_layernorm): Phi3RMSNorm()
+            (resid_attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_mlp_dropout): Dropout(p=0.0, inplace=False)
+            (post_attention_layernorm): Phi3RMSNorm()
+          )
+        )
+        (norm): Phi3RMSNorm()
+      )
+      (lm_head): Linear(in_features=768, out_features=32064, bias=False)
+    )
+  )
+)
+PeftModelForCausalLM(
+  (base_model): LoraModel(
+    (model): MiniPhi3(
+      (model): Phi3Model(
+        (embed_tokens): Embedding(32064, 768, padding_idx=0)
+        (embed_dropout): Dropout(p=0.0, inplace=False)
+        (layers): ModuleList(
+          (0-11): 12 x Phi3DecoderLayer(
+            (self_attn): Phi3FlashAttention2(
+              (o_proj): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=768, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=768, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (qkv_proj): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=2304, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=2304, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (rotary_emb): Phi3RotaryEmbedding()
+            )
+            (mlp): Phi3MLP(
+              (gate_up_proj): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (down_proj): lora.Linear(
+                (base_layer): Linear(in_features=2048, out_features=768, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=2048, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=768, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (activation_fn): SiLU()
+            )
+            (input_layernorm): Phi3RMSNorm()
+            (resid_attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_mlp_dropout): Dropout(p=0.0, inplace=False)
+            (post_attention_layernorm): Phi3RMSNorm()
+          )
+        )
+        (norm): Phi3RMSNorm()
+      )
+      (lm_head): Linear(in_features=768, out_features=32064, bias=False)
+    )
+  )
+)
+PeftModelForCausalLM(
+  (base_model): LoraModel(
+    (model): MiniPhi3(
+      (model): Phi3Model(
+        (embed_tokens): Embedding(32064, 768, padding_idx=0)
+        (embed_dropout): Dropout(p=0.0, inplace=False)
+        (layers): ModuleList(
+          (0-11): 12 x Phi3DecoderLayer(
+            (self_attn): Phi3FlashAttention2(
+              (o_proj): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=768, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=768, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (qkv_proj): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=2304, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=2304, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (rotary_emb): Phi3RotaryEmbedding()
+            )
+            (mlp): Phi3MLP(
+              (gate_up_proj): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (down_proj): lora.Linear(
+                (base_layer): Linear(in_features=2048, out_features=768, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=2048, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=768, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (activation_fn): SiLU()
+            )
+            (input_layernorm): Phi3RMSNorm()
+            (resid_attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_mlp_dropout): Dropout(p=0.0, inplace=False)
+            (post_attention_layernorm): Phi3RMSNorm()
+          )
+        )
+        (norm): Phi3RMSNorm()
+      )
+      (lm_head): Linear(in_features=768, out_features=32064, bias=False)
+    )
+  )
+)
+PeftModelForCausalLM(
+  (base_model): LoraModel(
+    (model): MiniPhi3(
+      (model): Phi3Model(
+        (embed_tokens): Embedding(32064, 768, padding_idx=0)
+        (embed_dropout): Dropout(p=0.0, inplace=False)
+        (layers): ModuleList(
+          (0-11): 12 x Phi3DecoderLayer(
+            (self_attn): Phi3FlashAttention2(
+              (o_proj): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=768, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=768, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (qkv_proj): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=2304, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=2304, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (rotary_emb): Phi3RotaryEmbedding()
+            )
+            (mlp): Phi3MLP(
+              (gate_up_proj): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (down_proj): lora.Linear(
+                (base_layer): Linear(in_features=2048, out_features=768, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=2048, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=768, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (activation_fn): SiLU()
+            )
+            (input_layernorm): Phi3RMSNorm()
+            (resid_attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_mlp_dropout): Dropout(p=0.0, inplace=False)
+            (post_attention_layernorm): Phi3RMSNorm()
+          )
+        )
+        (norm): Phi3RMSNorm()
+      )
+      (lm_head): Linear(in_features=768, out_features=32064, bias=False)
+    )
+  )
+)
+PeftModelForCausalLM(
+  (base_model): LoraModel(
+    (model): MiniPhi3(
+      (model): Phi3Model(
+        (embed_tokens): Embedding(32064, 768, padding_idx=0)
+        (embed_dropout): Dropout(p=0.0, inplace=False)
+        (layers): ModuleList(
+          (0-11): 12 x Phi3DecoderLayer(
+            (self_attn): Phi3FlashAttention2(
+              (o_proj): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=768, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=768, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (qkv_proj): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=2304, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=2304, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (rotary_emb): Phi3RotaryEmbedding()
+            )
+            (mlp): Phi3MLP(
+              (gate_up_proj): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (down_proj): lora.Linear(
+                (base_layer): Linear(in_features=2048, out_features=768, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=2048, out_features=64, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=64, out_features=768, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (activation_fn): SiLU()
+            )
+            (input_layernorm): Phi3RMSNorm()
+            (resid_attn_dropout): Dropout(p=0.0, inplace=False)
+            (resid_mlp_dropout): Dropout(p=0.0, inplace=False)
+            (post_attention_layernorm): Phi3RMSNorm()
+          )
+        )
+        (norm): Phi3RMSNorm()
+      )
+      (lm_head): Linear(in_features=768, out_features=32064, bias=False)
+    )
+  )
+)
+[2025-02-16 18:05:22,170] [INFO] [launch.py:351:main] Process 4143570 exits successfully.
+[2025-02-16 18:05:23,172] [INFO] [launch.py:351:main] Process 4143573 exits successfully.
+[2025-02-16 18:05:23,173] [INFO] [launch.py:351:main] Process 4143574 exits successfully.
+[2025-02-16 18:05:23,173] [INFO] [launch.py:351:main] Process 4143571 exits successfully.
+[2025-02-16 18:05:23,174] [INFO] [launch.py:351:main] Process 4143572 exits successfully.
+[2025-02-16 18:05:23,174] [INFO] [launch.py:351:main] Process 4143569 exits successfully.

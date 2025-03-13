@@ -1,0 +1,329 @@
+[2025-02-20 20:25:03,116] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[2025-02-20 20:25:04,355] [WARNING] [runner.py:202:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+[2025-02-20 20:25:04,355] [INFO] [runner.py:568:main] cmd = /home/gcq/anaconda3/envs/phi/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMSwgMiwgNCwgNSwgNiwgN119 --master_addr=127.0.0.1 --master_port=29500 --enable_each_rank_log=None dpo_miniphi3.py --deepspeed deepspeed_configs/ds_config.json
+[2025-02-20 20:25:07,045] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[2025-02-20 20:25:08,345] [INFO] [launch.py:146:main] WORLD INFO DICT: {'localhost': [1, 2, 4, 5, 6, 7]}
+[2025-02-20 20:25:08,345] [INFO] [launch.py:152:main] nnodes=1, num_local_procs=6, node_rank=0
+[2025-02-20 20:25:08,345] [INFO] [launch.py:163:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1, 2, 3, 4, 5]})
+[2025-02-20 20:25:08,345] [INFO] [launch.py:164:main] dist_world_size=6
+[2025-02-20 20:25:08,345] [INFO] [launch.py:168:main] Setting CUDA_VISIBLE_DEVICES=1,2,4,5,6,7
+[2025-02-20 20:25:08,365] [INFO] [launch.py:256:main] process 2606346 spawned with command: ['/home/gcq/anaconda3/envs/phi/bin/python', '-u', 'dpo_miniphi3.py', '--local_rank=0', '--deepspeed', 'deepspeed_configs/ds_config.json']
+[2025-02-20 20:25:08,375] [INFO] [launch.py:256:main] process 2606347 spawned with command: ['/home/gcq/anaconda3/envs/phi/bin/python', '-u', 'dpo_miniphi3.py', '--local_rank=1', '--deepspeed', 'deepspeed_configs/ds_config.json']
+[2025-02-20 20:25:08,390] [INFO] [launch.py:256:main] process 2606348 spawned with command: ['/home/gcq/anaconda3/envs/phi/bin/python', '-u', 'dpo_miniphi3.py', '--local_rank=2', '--deepspeed', 'deepspeed_configs/ds_config.json']
+[2025-02-20 20:25:08,409] [INFO] [launch.py:256:main] process 2606349 spawned with command: ['/home/gcq/anaconda3/envs/phi/bin/python', '-u', 'dpo_miniphi3.py', '--local_rank=3', '--deepspeed', 'deepspeed_configs/ds_config.json']
+[2025-02-20 20:25:08,431] [INFO] [launch.py:256:main] process 2606350 spawned with command: ['/home/gcq/anaconda3/envs/phi/bin/python', '-u', 'dpo_miniphi3.py', '--local_rank=4', '--deepspeed', 'deepspeed_configs/ds_config.json']
+[2025-02-20 20:25:08,526] [INFO] [launch.py:256:main] process 2606460 spawned with command: ['/home/gcq/anaconda3/envs/phi/bin/python', '-u', 'dpo_miniphi3.py', '--local_rank=5', '--deepspeed', 'deepspeed_configs/ds_config.json']
+[2025-02-20 20:25:12,363] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-02-20 20:25:12,365] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-02-20 20:25:12,445] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[2025-02-20 20:25:12,595] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[2025-02-20 20:25:12,614] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-02-20 20:25:12,618] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+##############################Train Dataset##############################
+DatasetDict({
+    train: Dataset({
+        features: ['prompt', 'chosen', 'rejected'],
+        num_rows: 39054
+    })
+    test: Dataset({
+        features: ['prompt', 'chosen', 'rejected'],
+        num_rows: 9764
+    })
+})
+[2025-02-20 20:25:24,260] [INFO] [comm.py:637:init_distributed] cdb=None
+##############################Train Dataset##############################
+DatasetDict({
+    train: Dataset({
+        features: ['prompt', 'chosen', 'rejected'],
+        num_rows: 39054
+    })
+    test: Dataset({
+        features: ['prompt', 'chosen', 'rejected'],
+        num_rows: 9764
+    })
+})
+[2025-02-20 20:25:24,322] [INFO] [comm.py:637:init_distributed] cdb=None
+##############################Train Dataset##############################
+DatasetDict({
+    train: Dataset({
+        features: ['prompt', 'chosen', 'rejected'],
+        num_rows: 39054
+    })
+    test: Dataset({
+        features: ['prompt', 'chosen', 'rejected'],
+        num_rows: 9764
+    })
+})
+[2025-02-20 20:25:24,854] [INFO] [comm.py:637:init_distributed] cdb=None
+##############################Train Dataset##############################
+DatasetDict({
+    train: Dataset({
+        features: ['prompt', 'chosen', 'rejected'],
+        num_rows: 39054
+    })
+    test: Dataset({
+        features: ['prompt', 'chosen', 'rejected'],
+        num_rows: 9764
+    })
+})
+[2025-02-20 20:25:24,901] [INFO] [comm.py:637:init_distributed] cdb=None
+##############################Train Dataset##############################
+DatasetDict({
+    train: Dataset({
+        features: ['prompt', 'chosen', 'rejected'],
+        num_rows: 39054
+    })
+    test: Dataset({
+        features: ['prompt', 'chosen', 'rejected'],
+        num_rows: 9764
+    })
+})
+[2025-02-20 20:25:25,052] [INFO] [comm.py:637:init_distributed] cdb=None
+[2025-02-20 20:25:25,052] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+##############################Train Dataset##############################
+DatasetDict({
+    train: Dataset({
+        features: ['prompt', 'chosen', 'rejected'],
+        num_rows: 39054
+    })
+    test: Dataset({
+        features: ['prompt', 'chosen', 'rejected'],
+        num_rows: 9764
+    })
+})
+[2025-02-20 20:25:25,061] [INFO] [comm.py:637:init_distributed] cdb=None
+[2025-02-20 20:25:27,781] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.14.2, git-hash=unknown, git-branch=unknown
+[2025-02-20 20:25:28,620] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2025-02-20 20:25:28,622] [INFO] [logging.py:96:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2025-02-20 20:25:28,622] [INFO] [logging.py:96:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2025-02-20 20:25:28,629] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW
+[2025-02-20 20:25:28,629] [INFO] [utils.py:56:is_zero_supported_optimizer] Checking ZeRO support for optimizer=AdamW type=<class 'torch.optim.adamw.AdamW'>
+[2025-02-20 20:25:28,630] [INFO] [logging.py:96:log_dist] [Rank 0] Creating torch.bfloat16 ZeRO stage 2 optimizer
+[2025-02-20 20:25:28,630] [INFO] [stage_1_and_2.py:148:__init__] Reduce bucket size 500000000
+[2025-02-20 20:25:28,630] [INFO] [stage_1_and_2.py:149:__init__] Allgather bucket size 500000000
+[2025-02-20 20:25:28,630] [INFO] [stage_1_and_2.py:150:__init__] CPU Offload: False
+[2025-02-20 20:25:28,630] [INFO] [stage_1_and_2.py:151:__init__] Round robin gradient partitioning: False
+[2025-02-20 20:25:28,983] [INFO] [utils.py:779:see_memory_usage] Before initializing optimizer states
+[2025-02-20 20:25:28,984] [INFO] [utils.py:780:see_memory_usage] MA 0.28 GB         Max_MA 0.28 GB         CA 0.29 GB         Max_CA 0 GB 
+[2025-02-20 20:25:28,984] [INFO] [utils.py:787:see_memory_usage] CPU Virtual Memory:  used = 19.88 GB, percent = 15.8%
+[2025-02-20 20:25:29,149] [INFO] [utils.py:779:see_memory_usage] After initializing optimizer states
+[2025-02-20 20:25:29,151] [INFO] [utils.py:780:see_memory_usage] MA 0.28 GB         Max_MA 0.28 GB         CA 0.31 GB         Max_CA 0 GB 
+[2025-02-20 20:25:29,151] [INFO] [utils.py:787:see_memory_usage] CPU Virtual Memory:  used = 19.87 GB, percent = 15.8%
+[2025-02-20 20:25:29,151] [INFO] [stage_1_and_2.py:543:__init__] optimizer state initialized
+[2025-02-20 20:25:29,313] [INFO] [utils.py:779:see_memory_usage] After initializing ZeRO optimizer
+[2025-02-20 20:25:29,314] [INFO] [utils.py:780:see_memory_usage] MA 0.28 GB         Max_MA 0.28 GB         CA 0.31 GB         Max_CA 0 GB 
+[2025-02-20 20:25:29,314] [INFO] [utils.py:787:see_memory_usage] CPU Virtual Memory:  used = 19.89 GB, percent = 15.8%
+[2025-02-20 20:25:29,315] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Final Optimizer = AdamW
+[2025-02-20 20:25:29,316] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed using client LR scheduler
+[2025-02-20 20:25:29,316] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
+[2025-02-20 20:25:29,316] [INFO] [logging.py:96:log_dist] [Rank 0] step=0, skipped=0, lr=[0.0], mom=[(0.9, 0.999)]
+[2025-02-20 20:25:29,318] [INFO] [config.py:996:print] DeepSpeedEngine configuration:
+[2025-02-20 20:25:29,318] [INFO] [config.py:1000:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2025-02-20 20:25:29,318] [INFO] [config.py:1000:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2025-02-20 20:25:29,318] [INFO] [config.py:1000:print]   amp_enabled .................. False
+[2025-02-20 20:25:29,318] [INFO] [config.py:1000:print]   amp_params ................... False
+[2025-02-20 20:25:29,319] [INFO] [config.py:1000:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2025-02-20 20:25:29,319] [INFO] [config.py:1000:print]   bfloat16_enabled ............. True
+[2025-02-20 20:25:29,319] [INFO] [config.py:1000:print]   bfloat16_immediate_grad_update  False
+[2025-02-20 20:25:29,319] [INFO] [config.py:1000:print]   checkpoint_parallel_write_pipeline  False
+[2025-02-20 20:25:29,319] [INFO] [config.py:1000:print]   checkpoint_tag_validation_enabled  True
+[2025-02-20 20:25:29,319] [INFO] [config.py:1000:print]   checkpoint_tag_validation_fail  False
+[2025-02-20 20:25:29,319] [INFO] [config.py:1000:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7033afa3c6a0>
+[2025-02-20 20:25:29,319] [INFO] [config.py:1000:print]   communication_data_type ...... None
+[2025-02-20 20:25:29,319] [INFO] [config.py:1000:print]   compile_config ............... enabled=False backend='inductor' kwargs={}
+[2025-02-20 20:25:29,319] [INFO] [config.py:1000:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2025-02-20 20:25:29,319] [INFO] [config.py:1000:print]   curriculum_enabled_legacy .... False
+[2025-02-20 20:25:29,319] [INFO] [config.py:1000:print]   curriculum_params_legacy ..... False
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   data_efficiency_enabled ...... False
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   dataloader_drop_last ......... False
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   disable_allgather ............ False
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   dump_state ................... False
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   dynamic_loss_scale_args ...... None
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   eigenvalue_enabled ........... False
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   eigenvalue_gas_boundary_resolution  1
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   eigenvalue_layer_num ......... 0
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   eigenvalue_max_iter .......... 100
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   eigenvalue_stability ......... 1e-06
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   eigenvalue_tol ............... 0.01
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   eigenvalue_verbose ........... False
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   elasticity_enabled ........... False
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   fp16_auto_cast ............... None
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   fp16_enabled ................. False
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   fp16_master_weights_and_gradients  False
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   global_rank .................. 0
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   grad_accum_dtype ............. None
+[2025-02-20 20:25:29,320] [INFO] [config.py:1000:print]   gradient_accumulation_steps .. 16
+[2025-02-20 20:25:29,321] [INFO] [config.py:1000:print]   gradient_clipping ............ 1.0
+[2025-02-20 20:25:29,321] [INFO] [config.py:1000:print]   gradient_predivide_factor .... 1.0
+[2025-02-20 20:25:29,321] [INFO] [config.py:1000:print]   graph_harvesting ............. False
+[2025-02-20 20:25:29,321] [INFO] [config.py:1000:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2025-02-20 20:25:29,321] [INFO] [config.py:1000:print]   initial_dynamic_scale ........ 1
+[2025-02-20 20:25:29,321] [INFO] [config.py:1000:print]   load_universal_checkpoint .... False
+[2025-02-20 20:25:29,321] [INFO] [config.py:1000:print]   loss_scale ................... 1.0
+[2025-02-20 20:25:29,321] [INFO] [config.py:1000:print]   memory_breakdown ............. False
+[2025-02-20 20:25:29,321] [INFO] [config.py:1000:print]   mics_hierarchial_params_gather  False
+[2025-02-20 20:25:29,321] [INFO] [config.py:1000:print]   mics_shard_size .............. -1
+[2025-02-20 20:25:29,321] [INFO] [config.py:1000:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
+[2025-02-20 20:25:29,321] [INFO] [config.py:1000:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2025-02-20 20:25:29,321] [INFO] [config.py:1000:print]   optimizer_legacy_fusion ...... False
+[2025-02-20 20:25:29,321] [INFO] [config.py:1000:print]   optimizer_name ............... None
+[2025-02-20 20:25:29,321] [INFO] [config.py:1000:print]   optimizer_params ............. None
+[2025-02-20 20:25:29,321] [INFO] [config.py:1000:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2025-02-20 20:25:29,321] [INFO] [config.py:1000:print]   pld_enabled .................. False
+[2025-02-20 20:25:29,321] [INFO] [config.py:1000:print]   pld_params ................... False
+[2025-02-20 20:25:29,321] [INFO] [config.py:1000:print]   prescale_gradients ........... False
+[2025-02-20 20:25:29,322] [INFO] [config.py:1000:print]   scheduler_name ............... None
+[2025-02-20 20:25:29,322] [INFO] [config.py:1000:print]   scheduler_params ............. None
+[2025-02-20 20:25:29,322] [INFO] [config.py:1000:print]   seq_parallel_communication_data_type  torch.float32
+[2025-02-20 20:25:29,322] [INFO] [config.py:1000:print]   sparse_attention ............. None
+[2025-02-20 20:25:29,322] [INFO] [config.py:1000:print]   sparse_gradients_enabled ..... False
+[2025-02-20 20:25:29,322] [INFO] [config.py:1000:print]   steps_per_print .............. inf
+[2025-02-20 20:25:29,322] [INFO] [config.py:1000:print]   train_batch_size ............. 1536
+[2025-02-20 20:25:29,322] [INFO] [config.py:1000:print]   train_micro_batch_size_per_gpu  16
+[2025-02-20 20:25:29,322] [INFO] [config.py:1000:print]   use_data_before_expert_parallel_  False
+[2025-02-20 20:25:29,322] [INFO] [config.py:1000:print]   use_node_local_storage ....... False
+[2025-02-20 20:25:29,322] [INFO] [config.py:1000:print]   wall_clock_breakdown ......... False
+[2025-02-20 20:25:29,322] [INFO] [config.py:1000:print]   weight_quantization_config ... None
+[2025-02-20 20:25:29,322] [INFO] [config.py:1000:print]   world_size ................... 6
+[2025-02-20 20:25:29,322] [INFO] [config.py:1000:print]   zero_allow_untested_optimizer  True
+[2025-02-20 20:25:29,322] [INFO] [config.py:1000:print]   zero_config .................. stage=2 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500000000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500000000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=None sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50,000,000 param_persistence_threshold=100,000 model_persistence_threshold=sys.maxsize max_live_parameters=1,000,000,000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True
+[2025-02-20 20:25:29,322] [INFO] [config.py:1000:print]   zero_enabled ................. True
+[2025-02-20 20:25:29,322] [INFO] [config.py:1000:print]   zero_force_ds_cpu_optimizer .. True
+[2025-02-20 20:25:29,322] [INFO] [config.py:1000:print]   zero_optimization_stage ...... 2
+[2025-02-20 20:25:29,322] [INFO] [config.py:986:print_user_config]   json = {
+    "train_batch_size": 1.536000e+03, 
+    "train_micro_batch_size_per_gpu": 16, 
+    "gradient_accumulation_steps": 16, 
+    "gradient_clipping": 1.0, 
+    "zero_allow_untested_optimizer": true, 
+    "fp16": {
+        "enabled": false, 
+        "loss_scale": 0, 
+        "initial_scale_power": 16, 
+        "loss_scale_window": 1000, 
+        "hysteresis": 2, 
+        "min_loss_scale": 1
+    }, 
+    "zero_optimization": {
+        "stage": 2, 
+        "allgather_partitions": true, 
+        "allgather_bucket_size": 5.000000e+08, 
+        "reduce_scatter": true, 
+        "reduce_bucket_size": 5.000000e+08, 
+        "overlap_comm": false, 
+        "contiguous_gradients": true
+    }, 
+    "steps_per_print": inf, 
+    "bf16": {
+        "enabled": true
+    }
+}
+{'loss': 0.6931, 'grad_norm': 24.79248809814453, 'learning_rate': 5e-06, 'rewards/chosen': 0.0, 'rewards/rejected': 0.0, 'rewards/accuracies': 0.0, 'rewards/margins': 0.0, 'logps/rejected': -3321.99658203125, 'logps/chosen': -612.438232421875, 'logits/rejected': -0.7222879528999329, 'logits/chosen': -0.5443124771118164, 'epoch': 0.04}
+[2025-02-20 20:27:13,107] [INFO] [launch.py:319:sigkill_handler] Killing subprocess 2606346
+[2025-02-20 20:27:13,392] [INFO] [launch.py:319:sigkill_handler] Killing subprocess 2606346
+[2025-02-20 20:27:13,434] [INFO] [launch.py:319:sigkill_handler] Killing subprocess 2606347
+[2025-02-20 20:27:13,839] [INFO] [launch.py:319:sigkill_handler] Killing subprocess 2606348
+[2025-02-20 20:27:13,861] [INFO] [launch.py:319:sigkill_handler] Killing subprocess 2606346
+[2025-02-20 20:27:13,861] [INFO] [launch.py:319:sigkill_handler] Killing subprocess 2606347
+[2025-02-20 20:27:13,861] [INFO] [launch.py:319:sigkill_handler] Killing subprocess 2606348
+[2025-02-20 20:27:14,419] [INFO] [launch.py:319:sigkill_handler] Killing subprocess 2606349
+[2025-02-20 20:27:14,461] [INFO] [launch.py:319:sigkill_handler] Killing subprocess 2606350
+[2025-02-20 20:27:14,863] [INFO] [launch.py:319:sigkill_handler] Killing subprocess 2606460
+[2025-02-20 20:27:14,902] [INFO] [launch.py:328:sigkill_handler] Main process received SIGINT, exiting
